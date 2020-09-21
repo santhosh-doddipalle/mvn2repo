@@ -5,10 +5,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>devopsgroup</groupId>
-  <artifactId>Project01</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <artifactId>Project1</artifactId>
+  <version>1.0</version>
+  <packaging>jar</packaging>
 
-  <name>Project01</name>
+  <name>Project1</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -71,5 +72,14 @@
         </plugin>
       </plugins>
     </pluginManagement>
+		<resources>
+      <resource>
+        <directory>src</directory>
+		<includes>
+          <include>archtype_filename.txt</include>
+        </includes>
+      </resource>
+	</resources>
+	<outputDirectory>target</outputDirectory>	
   </build>
 </project>
